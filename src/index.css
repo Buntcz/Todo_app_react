@@ -1,8 +1,72 @@
+body {
+    margin: 0 auto;
+    background-color: #594D5B;
+}
+
 .to-do-list {
-    border: 2px solid black;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 400px;
+}
+ 
+li {
+    margin: 0.3rem;
+    font-size: 1.4rem;
+    color: #f2f3f4;
+}
+
+button {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+input {
+    font-size: 1.1rem;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: #f2f3f4;
+}
+
+.delete-button {
+    background-color: #D21404;
+    color: #f2f3f4;
+}
+
+.delete-button, .up-button, .down-button  {
+    border: 3px solid black;
+    border-radius: 7px;
+}
+
+.up-button, .down-button {
+    background-color: #FFFF00;
+    color: #0D0907;
+}
+
+.add-button {
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: #f2f3f4;
+    color: #0D0907;
+}
+
+.delete-button, .add-button, .up-button, .down-button {
+    transition: border-color 300ms ease;
+}
+
+.delete-button:hover, .add-button:hover, .up-button:hover, .down-button:hover {
+    border-color: #f2f3f4;
+}
+
+
